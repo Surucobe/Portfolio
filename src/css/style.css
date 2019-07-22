@@ -1,3 +1,5 @@
-html{
-  background: url("./img/construyendo.jpg")
+body{
+  background-image: url("../img/stormtrooper.jpg");
+  background-repeat: no-repeat;
+  background-size: 100vw;
 }
