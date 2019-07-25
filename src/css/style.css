@@ -9,20 +9,39 @@ display: grid;
 justify-content: center;
 align-items: center;
 text-align: left;
-grid-template-rows: repeat(3, 1fr);
+grid-template: repeat(3, 1fr) / 1fr;
 background-color: #349ed6;
 border-right: solid 1px #000;
 }
 .lista-navegacion{
   display: grid;
+  justify-content: center;
+  grid-template-columns: 1fr;
+  grid-template-rows: repeat(3, 50px);
   grid-row-gap: 40px;
+  padding: 0;
 }
 .lista-navegacion li{
+  display: flex;
+  justify-content: center;
+  align-items: center;
   list-style: none;
+  text-align: center;
+  overflow: hidden;
+  border-top: 1px solid #000;
+  border-bottom: 1px solid #000;
 }
 .lista-navegacion a{
+  /* display: block; */
+  height: 100%;
+  width: 100%;
+  padding-top: 30px;
+  color: #fff;
   text-decoration: none;
-  color: #ffffff;
+}
+
+.contacto{
+  text-align: center;
 }
 
 .main{
