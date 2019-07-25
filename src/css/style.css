@@ -18,7 +18,7 @@ border-right: solid 1px #000;
   justify-content: center;
   grid-template-columns: 1fr;
   grid-template-rows: repeat(3, 50px);
-  grid-row-gap: 40px;
+  grid-row-gap: 30px;
   padding: 0;
 }
 .lista-navegacion li{
@@ -31,8 +31,11 @@ border-right: solid 1px #000;
   border-top: 1px solid #000;
   border-bottom: 1px solid #000;
 }
+.lista-navegacion li:hover{
+  transition: 1s;
+  transform: scale(1.1);
+}
 .lista-navegacion a{
-  /* display: block; */
   height: 100%;
   width: 100%;
   padding-top: 30px;
