@@ -28,11 +28,13 @@ border-right: solid 1px #000;
   list-style: none;
   text-align: center;
   overflow: hidden;
+  will-change: contents;
   border-top: 1px solid #000;
   border-bottom: 1px solid #000;
 }
 .lista-navegacion li:hover{
-  transition: 1s;
+  will-change: contents;
+  transition: .8s;
   transform: scale(1.1);
 }
 .lista-navegacion a{
@@ -63,13 +65,45 @@ border-right: solid 1px #000;
   width: 800px;
   height: 500px;
   display: grid;
-  grid-template-columns: repeat(2, 200px);
-  justify-content: space-evenly;
+  grid-template-columns: 200px 1fr;
+  grid-template-rows: 1fr 1fr;
+  grid-template-areas: "picture body"
+                       "tecno body";
+  border-radius: 5px;
   border: solid 1px #000;
 }
 
+.img-container{
+  overflow: hidden;
+}
+.portrait{
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+.header{
+  grid-area: picture;
+}
+.body{
+  grid-area: body;
+  text-align: center;
+  color: #fff;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+}
+.body-info-me{
+  display: flex;
+}
+.tech{
+  grid-area: tecno;
+  border: #fff 1px solid;
+}
+
 .test{
-  border: solid 1px #000;
+  border-left: solid 1px #000;
+  border-right: solid 1px #000;
 }
 
 h1{
