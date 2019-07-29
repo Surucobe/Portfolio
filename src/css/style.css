@@ -7,18 +7,30 @@ width: 240px;
 position: fixed;
 display: grid;
 justify-content: center;
-align-items: center;
+/* align-items: center; */
 text-align: left;
 grid-template: repeat(3, 1fr) / 1fr;
 background-color: #349ed6;
 border-right: solid 1px #000;
 }
+
+.side-bar-logo{
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-image: url("../img/Ainz_Ooal_Gown_Bandera.png");
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: 50%;
+}
+
 .lista-navegacion{
   display: grid;
   justify-content: center;
   grid-template-columns: 1fr;
   grid-template-rows: repeat(3, 50px);
   grid-row-gap: 30px;
+  overflow: hidden;
   padding: 0;
 }
 .lista-navegacion li{
@@ -46,11 +58,14 @@ border-right: solid 1px #000;
 }
 
 .contacto{
+  display: flex;
+  align-items: center;
+  justify-content: center;
   text-align: center;
 }
 
 .main{
-  background-image: url("../img/stormtrooper.jpg");
+  /* background-image: url("../img/stormtrooper.jpg"); */
   background-repeat: no-repeat;
   background-size: 100vw;
   background-position: center;
@@ -87,23 +102,31 @@ border-right: solid 1px #000;
 .body{
   grid-area: body;
   text-align: center;
-  color: #fff;
+  color: #000;
   display: flex;
   align-items: center;
   justify-content: center;
   flex-direction: column;
 }
-.body-info-me{
+.body-info{
+  width: 26em;
   display: flex;
 }
 .tech{
   grid-area: tecno;
-  border: #fff 1px solid;
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+}
+.tech ul{
+  padding-left: 0;
+}
+.tech li{
+  padding-top: .5em;
 }
 
 .test{
   border-left: solid 1px #000;
-  border-right: solid 1px #000;
 }
 
 h1{
