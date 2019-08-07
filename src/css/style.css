@@ -34,7 +34,7 @@ border-right: solid 1px #000;
   justify-content: center;
   grid-template-columns: 1fr;
   grid-template-rows: repeat(3, 50px);
-  grid-row-gap: 30px;
+  grid-row-gap: 25px;
   overflow: hidden;
   padding: 0;
 }
@@ -51,7 +51,7 @@ border-right: solid 1px #000;
 }
 .lista-navegacion li:hover{
   will-change: contents;
-  transition: .8s;
+  transition: .09s;
   transform: scale(1.1);
 }
 .lista-navegacion a{
@@ -69,12 +69,17 @@ border-right: solid 1px #000;
   align-items: center;
   justify-items: center;
 }
+.contacto-anchor:hover{
+  transition: 1s;
+  transform: rotate(360deg);
+}
+.anchor-contacto:hover{
+  transition: 1s;
+  transform: rotate(-360deg);
+}
 
 .main{
-  /* background-image: url("../img/stormtrooper.jpg"); */
-  background-repeat: no-repeat;
-  background-size: 100vw;
-  background-position: center;
+  /* background-size: 100vw; */
   max-width: 1086px;
   height: 626px;
   margin-left: 240px;
@@ -109,11 +114,11 @@ border-right: solid 1px #000;
 .body{
   grid-area: body;
   text-align: center;
-  color: #000;
-  display: flex;
-  align-items: center;
+  background-color: #000;
+  color: #fff;
+  display: grid;
   justify-content: center;
-  flex-direction: column;
+  align-items: center;
 }
 .body-info{
   width: 26em;
