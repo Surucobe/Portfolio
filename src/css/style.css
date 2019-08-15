@@ -3,7 +3,7 @@
 }
 
 body{
-  /* background-image: linear-gradient(50deg, rgb(74, 77, 218), #3695af, #f00); */
+  background-image: linear-gradient(50deg, rgb(74, 77, 218), #3695af, #f00);
   /* animation: fondo 1s infinite ease-in-out alternate; */
 }
 
@@ -46,8 +46,8 @@ border-right: solid 1px #000;
   text-align: center;
   overflow: hidden;
   will-change: contents;
-  border-top: 1px solid #000;
-  border-bottom: 1px solid #000;
+  font-weight: bold;
+  font-size: 1.2em;
 }
 .lista-navegacion li:hover{
   will-change: contents;
