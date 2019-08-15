@@ -120,6 +120,11 @@ border-right: solid 1px #000;
   font-weight: bold;
   color: #fff;
 }
+.body-info a{
+  text-decoration: none;
+  color: #349ed6;
+}
+
 .tech{
   grid-area: tecno;
   display: grid;
@@ -150,6 +155,8 @@ border-right: solid 1px #000;
 
 h1{
   text-align: center;
+  font-weight: bold;
+  color: #fff;
 }
 
 i{
