@@ -7,14 +7,15 @@ body{
   padding: 0;
 }
 .uno{
-  background-color: #e0ebe8;
+  background-color: #22313F;
   font-family: 'Open Sans', sans-serif;
   height: 650px;
   display: grid;
+  color: whitesmoke;
 }
 .uno p{
   margin: 5px;
-  color: green;
+  font-weight: bold;
 }
 .uno a{
   text-decoration: none;
@@ -76,14 +77,23 @@ body{
 .tres{
   min-height: 110vh;
   background: #C8F7C5;
-  display: flex;
-  flex-direction: column;
+  display: grid;
   justify-content: center;
+  grid-template-columns: 1fr;
+}
+.tres-info{
+  display: grid;
+  align-items: center;
+}
+.media_container{
+  display: flex;
+  justify-content: space-evenly;
+  align-items: center;
 }
 
 .navbar{
   position:fixed;
-  background-color: #e0ebe8;
+  background-color: #22313F;
   display: flex;
   justify-content: flex-end;
   align-items: center;
@@ -114,14 +124,14 @@ a:hover {
   border-radius: 50%;
   width: 100px;
   height: 100px;
-  display: inline-block;
   line-height: 100px;
   font-weight: bold;
   background: #e0ebe8;
   color: #008080;
-  /* margin: 30px;
-  margin-top: 220px; */
   text-decoration: none;
+}
+.circle:hover{
+  
 }
 
 .foot{
