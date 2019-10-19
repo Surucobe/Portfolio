@@ -129,9 +129,11 @@ a:hover {
   background: #e0ebe8;
   color: #008080;
   text-decoration: none;
+  position: relative;
 }
 .circle:hover{
-  
+  transform: scale(1.1);
+  transition: 0.09s;
 }
 
 .foot{
