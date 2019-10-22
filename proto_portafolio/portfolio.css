@@ -42,7 +42,8 @@ body{
   object-fit: cover;
 }
 .welcome-section_div h1{
-  color: #90C695;
+  /* color: #90C695; */
+  color: whitesmoke;
 }
 
 .dos{
@@ -149,6 +150,7 @@ a:hover {
   width: 150px;
   height: 150px;
   line-height: 150px;
+  font-size: 1.3em;
   font-weight: bold;
   background: #e0ebe8;
   color: #008080;
