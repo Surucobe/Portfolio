@@ -49,8 +49,8 @@ body{
 .dos{
   height: auto;
   color: 	#ADD8E6;
-  display: grid;
-  grid-row-gap: 15px;
+  display: flex;
+  justify-content: center;
 }
 .dos a{
   text-decoration: none;
@@ -59,12 +59,17 @@ body{
 .project-gallery{
   height: auto;
   display: grid;
-  /* grid-template-rows: repeat(auto-fill, 280px); */
   grid-row-gap: 10px;
 }
 .project-description{
   display: flex;
   align-items: center;
+}
+.gallery-container{
+  width: 800px;
+  display: grid;
+  grid-row-gap: 15px;
+  margin: 25px 0;
 }
 .button-container{
   display: flex;
