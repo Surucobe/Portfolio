@@ -63,7 +63,17 @@ body{
 }
 .project-description{
   display: flex;
-  align-items: center;
+  flex-direction: column;
+  justify-content: space-evenly;
+}
+.project-description-techs{
+  display: flex;
+  justify-content: center;
+}
+.project-description-techs span{
+  border: 1px solid black;
+  border-radius: 5px;
+  margin: 0 10px;
 }
 .gallery-container{
   width: 800px;
