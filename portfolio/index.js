@@ -1,6 +1,12 @@
+import projects from './assets/projects.js';
+import galleryTemplate from './assets/Templates.js';
+
+const $gallery = document.getElementById('gallery')
 const $logo = document.getElementById('logo')
 
-//$logo.onclick = () => $logo.style = 'color: white;'
+//testing area
+
+//
 
 $logo.addEventListener('click', (event) => {
   if(event.target.style.color != 'white'){
@@ -10,9 +16,17 @@ $logo.addEventListener('click', (event) => {
   }
 })
 
-function printTemplate(element, string){
-  let html = document.implementation.createHTMLDocument()
+function printTemplate(elm, string){
+  const html = document.implementation.createHTMLDocument()
   html.body.innerHTML = string
-  let tem = html.body.children[0]
-  element.append(tem)
+  const tem = html.body.children[0]
+  elm.append(tem)
 }
+
+projects.forEach((item) =>{
+  if(item.ready === true){
+    printTemplate($gallery, galleryTemplate(item))
+  }else{
+    return
+  }
+})

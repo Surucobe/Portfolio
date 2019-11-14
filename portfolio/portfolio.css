@@ -62,6 +62,14 @@ body{
   grid-row-gap: 10px;
 }
 .project-description{
+  width: 100%;
+  display: flex;
+  justify-content: space-evenly;
+  align-items: center;
+}
+.project-description_wrapper{
+  height: 75%;
+  width: auto;
   display: flex;
   flex-direction: column;
   justify-content: space-evenly;
@@ -71,7 +79,9 @@ body{
   justify-content: center;
 }
 .project-description-techs span{
-  border: 1px solid black;
+  border: 2px solid #000;
+  background-color: #22313F;
+  width: 3.5em;
   border-radius: 5px;
   margin: 0 10px;
 }
