@@ -1,5 +1,4 @@
 body{
-  text-align: center;
   font-family: 'Open Sans', sans-serif;
 }
 *{
@@ -42,6 +41,7 @@ body{
   display: flex;
   flex-direction: column;
   justify-content: space-evenly;
+  text-align: center;
 }
 .profile{
   width: 140px;
@@ -51,7 +51,6 @@ body{
   object-fit: cover;
 }
 .welcome-section_div h1{
-  /* color: #90C695; */
   color: whitesmoke;
 }
 
@@ -93,6 +92,7 @@ body{
   width: 3.5em;
   border-radius: 5px;
   margin: 0 10px;
+  text-align: center;
 }
 .gallery-container{
   width: 800px;
@@ -128,6 +128,7 @@ body{
   border-right: 2px solid lightblue;
 }
 .p-title{
+  text-align: center;
   width: 240px;
   border-right: 2px solid lightblue;
 }
@@ -140,6 +141,7 @@ body{
   min-height: 110vh;
   background-color: #22313F;
   color: whitesmoke;
+  text-align: center;
   display: grid;
   align-items: center;
   grid-template-columns: 1fr;
