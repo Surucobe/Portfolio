@@ -21,7 +21,7 @@ function printTemplate(elm, string){
 
 printTemplate(test, Canvas.welcomeTemplate()) //printeando seccion de bienvenida
 
-//printeando galeria de proyectos
+//printeando galeria de proyectos, falta llenar los proyectos
 projects.forEach((item) =>{
   if(item.ready === true){
     printTemplate($gallery, Canvas.galleryTemplate(item))
