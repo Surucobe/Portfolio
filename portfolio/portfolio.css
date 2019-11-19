@@ -13,6 +13,7 @@ body{
 
 .uno{
   background-color: #22313F;
+  background-image: url('./images/stars.svg');
   font-family: 'Open Sans', sans-serif;
   height: 650px;
   display: grid;
@@ -161,7 +162,9 @@ body{
 .navbar{
   position:fixed;
   background-color: #22313F;
+  background-image: url('./images/stars.svg');
   display: flex;
+  opacity: 0.8;
   justify-content: space-between;
   align-items: center;
   width: 100%;
@@ -169,6 +172,10 @@ body{
   top: 0;
   left: 0;
   font-size: 16px;
+}
+.navbar:hover{
+  opacity: 1;
+  transition-duration: 1s;
 }
 .navbar h1{
   color: #008080;
