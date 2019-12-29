@@ -87,7 +87,7 @@ body{
   display: flex;
   justify-content: center;
 }
-.project-description-techs span{
+.project-description-techs li{
   border: 2px solid #000;
   background-color: #22313F;
   width: 3.5em;

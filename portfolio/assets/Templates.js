@@ -1,25 +1,27 @@
 class Templates{
 
   galleryTemplate(obj) {
-    let s = []
+    let list = []
     obj.tech.forEach((item) =>{
-      s.push(`<span>${item}</span>`)
+      s.push(`<li>${item}</li>`)
     })
   
       return(
         `
         <div class="project-tile">
-        <a class="project-link" href="${obj.link}" target="_blank">
-          <img src="${obj.src}" class="project-pic">
-          <div class="p-title">${obj.title}</div>
-        </img>
-        </a>
-        <div class="project-description">
-          <div class="project-description_wrapper">
+          <a class="project-link" href="${obj.link}" target="_blank">
+            <img src="${obj.src}" class="project-pic">
+              <div class="p-title">${obj.title}</div>
+            </img>
+          </a>
+          <div class="project-description">
+            <div class="project-description_wrapper">
               ${obj.desc}
               <div class="project-description-techs">
-                ${s}
-              </div>
+                <ul>
+                  ${list}
+                </ul>
+            </div>
           </div>
         </div>
       </div>`
