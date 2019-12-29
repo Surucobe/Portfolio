@@ -36,8 +36,9 @@ class Templates{
         </div>
         <div>
           <p>
-            My name is Armando Duarte, i also go under the nick surucobe, i'm 22 years old and i'm from Venezuela <br>
-            I'm a front-end developer, buddhist, gamer, anime lover, bilingual, student and Javascript fan <br><br>
+            My name is Armando Duarte, i also go by the nick surucobe, i'm 23 years old and i'm from Venezuela <br>
+            front-end: html, css, javascript, React, PostCSS, PHP, bootstrap and React <br>
+            back-end: PHP, nextJS <br><br>
           </p>
           <p>
             I Learned web development in <a href="https://platzi.com/@Surucobe/" target="_blank">Platzi</a>, one of the best if
