@@ -3,7 +3,9 @@ class Templates{
   galleryTemplate(obj) {
     let list = []
     obj.tech.forEach((item) =>{
-      s.push(`<li>${item}</li>`)
+      if(item.ready){
+        s.push(`<li>${item}</li>`)
+      }
     })
   
       return(
