@@ -1,15 +1,15 @@
-class Templates{
+class Templates {
 
   galleryTemplate(obj) {
     let list = []
-    obj.tech.forEach((item) =>{
-      if(item.ready){
+    obj.tech.forEach((item) => {
+      if (item.ready) {
         s.push(`<li>${item}</li>`)
       }
     })
-  
-      return(
-        `
+
+    return (
+      `
         <div class="project-tile">
           <a class="project-link" href="${obj.link}" target="_blank">
             <img src="${obj.src}" class="project-pic">
@@ -27,11 +27,11 @@ class Templates{
           </div>
         </div>
       </div>`
-      )
-    }
-  
-  welcomeTemplate(){
-    return(
+    )
+  }
+
+  welcomeTemplate() {
+    return (
       `
       <div class="welcome-wrapper">
         <div class="welcome-section_div">
@@ -55,6 +55,16 @@ class Templates{
             href="https://github.com/Surucobe">github</a>, links are on the side bar along with my email and my linkedin
           </p>
         </div>
+      </div>
+      `
+    )
+  }
+
+  clockTemplate(H, M) {
+    return (
+      `
+      <div class="clock-time">
+        <div> ${H} </div> : <div> ${M} </div>
       </div>
       `
     )

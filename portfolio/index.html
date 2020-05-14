@@ -1,92 +1,108 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-  <meta charset="UTF-8">
-  <link rel="icon" href="./images/pc.png">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Surucobe Portfolio</title>
-  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.11.2/css/all.min.css">
-  <link rel="stylesheet" href="portfolio.css">
-</head>
-<body>
-  <nav class="navbar">
-    <h1 id="logo">
-      <a href="https://github.com/Surucobe" target="_blanc">
-        Surucobe
-      </a>
-    </h1>
-    <ul>
-      <a href="#welcome-section">
-        <li>About</li>
-      </a>
-      <a href="#projects">
-        <li>Work</li>
-      </a>
-      <a href="#profile">
-        <li>Contact</li>
-      </a>
-    </ul>
-  </nav>
-  <section id="welcome-section" class="uno">
-    <!-- At this point i just wanna use javascript -->
-    <div class="welcome-wrapper-div" id="welcome">
-    </div>
-  </section>
-  <section id="projects" class="dos">
-    <div class="gallery-container">
-      <h1>These are some of my projects</h1>
-      <div class="project-gallery" id="gallery">
-        <!-- Projects -->
+  <head>
+    <meta charset="UTF-8" />
+    <link rel="icon" href="./images/pc.png" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Surucobe Portfolio</title>
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.11.2/css/all.min.css"
+    />
+    <link rel="stylesheet" href="portfolio.css" />
+  </head>
+  <body>
+    <nav class="navbar">
+      <h1 id="logo">
+        <a href="https://github.com/Surucobe" target="_blanc">
+          Surucobe
+        </a>
+      </h1>
+      <ul>
+        <a href="#welcome-section">
+          <li>About</li>
+        </a>
+        <a href="#projects">
+          <li>Work</li>
+        </a>
+        <a href="#profile">
+          <li>Contact</li>
+        </a>
+      </ul>
+    </nav>
+    <section id="welcome-section" class="uno">
+      <!-- At this point i just wanna use javascript -->
+      <div class="welcome-wrapper-div" id="welcome"></div>
+    </section>
+    <section id="projects" class="dos">
+      <div class="gallery-container">
+        <h1>These are some of my projects</h1>
+        <div class="project-gallery" id="gallery">
+          <!-- Projects -->
+        </div>
+        <div class="button-container">
+          <button class="button">
+            <a href="https://codepen.io/dashboard/" target="_blank">
+              Show all
+            </a>
+          </button>
+        </div>
       </div>
-      <div class="button-container">
-        <button class="button">
-          <a href="https://codepen.io/dashboard/" target="_blank">
-            Show all
+    </section>
+    <section id="profile" class="tres">
+      <div class="absolute-container">
+        <div class="tres-info">
+          <h1>Let's work together!</h1>
+          <p>
+            Hmtl5, CSS3, Javascript, jquery, PHP, webpack4 and React are some of
+            the technologies i wrok with<br /><br />
+            Here's a link to the social medias i frequent, you can mostly find
+            me on github or twitter
+          </p>
+        </div>
+        <div class="media_container">
+          <a
+            class="circle"
+            href="https://www.facebook.com/armando.duarte.1401"
+            target="_blank"
+          >
+            facebook
+            <i class="fab fa-facebook"></i>
           </a>
-        </button>
+          <a class="circle" href="https://github.com" target="_blank">
+            Github
+            <i class="fab fa-github-alt"></i>
+          </a>
+          <a class="circle" href="https://twitter.com/Surucobe" target="_blank">
+            Twitter
+            <i class="fab fa-twitter"></i>
+          </a>
+          <a
+            class="circle"
+            href="https://www.linkedin.com/in/armando-duarte-140338160/"
+            target="_blank"
+          >
+            Linkedin
+            <i class="fab fa-linkedin"></i>
+          </a>
+          <a class="circle" href="" target="_blank">
+            E-mail
+            <i class="far fa-envelope"></i>
+          </a>
+        </div>
       </div>
-    </div>
-  </section>
-  <section id="profile" class="tres">
-    <div class="absolute-container">
-      <div class="tres-info">
-        <h1>Let's work together!</h1>
-        <p>
-          Hmtl5, CSS3, Javascript, jquery, PHP, webpack4 and React are some of the technologies i wrok with<br><br>
-          Here's a link to the social medias i frequent, you can mostly find me on github or twitter
-        </p>
-      </div>
-      <div class="media_container">
-        <a class="circle" href="https://www.facebook.com/armando.duarte.1401" target="_blank">
-          facebook
-          <i class="fab fa-facebook"></i>
-        </a>
-        <a class="circle" href="https://github.com" target="_blank">
-        Github
-        <i class="fab fa-github-alt"></i>
-        </a>
-        <a class="circle" href="https://twitter.com/Surucobe" target="_blank">
-        Twitter
-        <i class="fab fa-twitter"></i>
-        </a>
-        <a class="circle" href="https://www.linkedin.com/in/armando-duarte-140338160/" target="_blank">
-        Linkedin
-        <i class="fab fa-linkedin"></i>
-        </a>
-        <a class="circle" href="" target="_blank">
-          E-mail
-          <i class="far fa-envelope"></i>
-        </a>
-      </div>
-    </div>
-  </section>
-  <footer class="foot">
-    <p>This is my portfolio.. All the projects display are just some of my works and challenges<br>
-      i've made in my free time and in my different classes<br>
-      <small>Created by Armando/Surucobe</small></p>
-  </footer>
-</body>
-<script type="module" src="./index.js"></script>
+    </section>
+    <footer class="foot">
+      <p>
+        This is my portfolio.. All the projects display are just some of my
+        works and challenges<br />
+        i've made in my free time and in my different classes<br />
+        <small>Created by Armando/Surucobe</small>
+      </p>
+    </footer>
+    <div class="digital-clock" id="clock"></div>
+  </body>
+  <script type="module" src="./index.js"></script>
 </html>
 <!-- <div class="tech-list">
     <ul>
