@@ -19,7 +19,7 @@ function setTime() {
   printTemplate($clock, Canvas.clockTemplate(Hours, Minutes));
 }
 
-setInterval(setTime, 30000);
+setInterval(setTime, 20000);
 //
 
 //funcion para plasmar los strings en js y pasarlos a html
